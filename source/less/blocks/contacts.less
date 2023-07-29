@@ -27,3 +27,47 @@
     right: 11px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#ffffff 0, #f2f2f2 0);
+  }
+
+  .contacts-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .contacts__wrapper {
+    column-gap: 103px;
+    width: 668px;
+    padding-inline: 30px;
+  }
+
+  .contacts-block__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 105px;
+  }
+
+  .contacts-block__icon {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+  }
+
+  .contacts-block__input {
+    background-color: #f2f2f2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__wrapper {
+    width: 1050px;
+    padding-inline: 80px;
+  }
+}

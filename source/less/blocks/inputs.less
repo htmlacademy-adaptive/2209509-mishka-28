@@ -3,7 +3,7 @@
     margin-block: 35px;
   }
 
-  .input-block-title {
+  .inputs__title {
     font-family: "Open Sans";
     font-size: 17px;
     color: #63d1bb;
@@ -37,5 +37,34 @@
     display: flex;
     gap: 20px;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 103px;
+  }
+
+  .inputs__wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 103px;
+    width: 668px;
+    padding-inline: 30px;
+  }
+
+  .inputs__title {
+    position: relative;
+    top: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .inputs__wrapper {
+    width: 1050px;
+    padding-inline: 80px;
   }
 }

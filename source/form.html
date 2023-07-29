@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="header">
     <nav class="nav">
       <div class="nav__inner">
         <p class="nav__logo-wrapper">
           <a href="index.html" class="nav__logo">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="nav__logo-img" src="img/logo-mobile.svg" alt="Логотип Мишка">
             </picture>
@@ -34,10 +34,11 @@
             </li>
           </ul>
 
+          <div class="nav__page-menu">
           <div class="nav__search">
             <a href="#" class="nav__search-link">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black" />
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path class="nav__search-link-svg" opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" />
               </svg>
               <span class="nav__search-label">Поиск по сайту</span>
             </a>
@@ -45,35 +46,27 @@
 
           <div class="nav__cart">
             <a href="#" class="nav__cart-link">
-              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black" />
+              <svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+                <path class="nav__cart-link-svg" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" />
               </svg>
               <span class="nav__cart-label">Корзина: пока пуста</span>
             </a>
           </div>
         </div>
+        </div>
+
+        <div class="subnav">
+          <div class="subnav__container">
+              <p class="subnav__delivery">Бесплатная доставка по России</p>
+          </div>
+        </div>
       </div>
     </nav>
 
-    <div class="subnav">
-      <div class="subnav__container">
-        <div class="subnav__inner">
-          <ul class="subnav__links">
-            <li class="subnav__item">
-              <a href="#" class="subnav__link">Новые поступления</a>
-            </li>
-            <li class="subnav__item">
-              <a href="#" class="subnav__link">Распродажа</a>
-            </li>
-          </ul>
-
-          <p class="subnav__delivery">Бесплатная доставка по России</p>
-        </div>
-      </div>
-    </div>
-
     <div class="header__title-wrapper">
+      <div class="header__title-zigzag">
       <h1 class="header__title">Вязание на заказ</h1>
+    </div>
     </div>
   </header>
 
@@ -87,7 +80,8 @@
           </P>
         </div>
         <div class="inputs">
-          <h3 class="input-block-title">
+          <div class="inputs__wrapper">
+          <h3 class="inputs__title">
               ТИП
             </h3>
           <div class="input-block">
@@ -104,9 +98,11 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div class="sight">
-          <h3 class="sight-block-title">
+          <div class="sight__wrapper">
+          <h3 class="sight__title">
               ЦВET
             </h3>
           <div class="sight__block">
@@ -143,12 +139,14 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div class="form-block">
-          <h3 class="form-block-title">
+          <div class="form-block__wrapper">
+          <h3 class="form-block__title">
               ФИО
             </h3>
-          <div class="form-block__wrapper">
+          <div class="form-block__container">
             <div class="form-block__field">
               <label class="form-block__label" for="name">Имя:
                 <input class="form-block__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
@@ -168,8 +166,10 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div class="contacts">
+          <div class="contacts__wrapper">
           <div class="contacts-block">
             <div class="contacts-block__field">
               <label class="contacts-block__label" for="tel">ТЕЛ
@@ -186,7 +186,7 @@
             </div>
 
             <div class="contacts-block__field">
-              <label class="contacts-block__label" for="email">E-mail
+              <label class="contacts-block__label" for="email">E-&nbsp;mail
                 <input class="contacts-block__input contacts-block__input--imail" type="email" name="email" id="email" placeholder="Ваш Email*">
                 <svg class="contacts-block__icon" width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2" d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" fill="black" />
@@ -195,8 +195,10 @@
             </div>
           </div>
         </div>
+        </div>
 
         <div class="review">
+          <div class="review__wrapper">
           <div class="review__title-wrapper">
             <span class="review__title">ДОП</span>
           </div>
@@ -212,33 +214,37 @@
               </button>
             </div>
           </div>
+          </div>
         </div>
       </form>
     </section>
   </main>
 
-  <section class="modal visually-hidden">
+  <section class="modal">
     <div class="modal__wrapper">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form class="size-select-wrapper" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="size-select">
-          <legend class="size-select__legend">Выберите размер:</legend>
+        <div class="size-select">
+          <span class="size-select__legend">Выберите размер:</span>
           <ul class="size-select__list">
             <li class="size-select__item">
-              <input class="size-select__input" id="size-select-input-1" name="size" type="radio" value="s" checked>
-              <label for="size-select-input-1" class="size-select__label">S</label>
+              <label for="size-select__label" class="size-select__label">S
+                <input class="size-select__input visually-hidden" id="size-select-input-1" name="size" type="radio" value="s" checked>
+              </label>
             </li>
             <li class="size-select__item">
-              <input class="size-select__input" id="size-select-input-2" name="size" type="radio" value="m">
-              <label for="size-select-input-2" class="size-select__label">M</label>
+              <label for="size-select__label" class="size-select__label">M
+                <input class="size-select__input visually-hidden" id="size-select-input-2" name="size" type="radio" value="m">
+              </label>
             </li>
             <li class="size-select__item">
-              <input class="size-select__input" id="size-select-input-3" name="size" type="radio" value="l">
-              <label for="size-select-input-3" class="size-select__label">L</label>
+              <label for="size-select__label" class="size-select__label">L
+                <input class="size-select__input visually-hidden" id="size-select-input-3" name="size" type="radio" value="l">
+              </label>
             </li>
           </ul>
-        </fieldset>
-        <button class="size-select__button" type="submit">Добавить</button>
+        </div>
+        <button class="size-select-wrapper__button" type="submit">Добавить</button>
       </form>
     </div>
   </section>

@@ -20,3 +20,49 @@
     color: #000000;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header__title-wrapper {
+    padding-block: 65px;
+    background-color: #f1f1f1;
+  }
+
+  .header__title {
+    position: relative;
+    font-family: "Open Sans";
+    font-size: 43px;
+    color: #000000;
+  }
+
+  .header__title-zigzag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .header__title-zigzag::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-tablet.svg");
+    background-position: bottom;
+    background-size: 770px 24px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .header__title {
+    font-size: 53px;
+  }
+}

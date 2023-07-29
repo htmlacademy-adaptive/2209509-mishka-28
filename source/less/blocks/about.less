@@ -29,3 +29,59 @@
     color: #000000;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .about {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .about__wrapper {
+    padding-inline: 60px;
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 43px;
+    text-align: left;
+  }
+
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    margin-top: 40px;
+  }
+
+  .about__item {
+    width: 235px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .about__wrapper {
+    padding-inline: 100px;
+    width: 1050px;
+  }
+
+  .about__title {
+    font-size: 53px;
+  }
+
+  .about__list {
+    column-gap: 85px;
+  }
+
+  .about__item-text {
+    font-size: 20px;
+  }
+}

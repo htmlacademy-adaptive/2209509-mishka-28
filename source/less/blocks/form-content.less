@@ -3,13 +3,44 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px;
-    width: 261px;
+    padding: 30px;
   }
 
   .form-content__description-text {
     font-family: "Open Sans";
     font-size: 13px;
     color: #444444;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .form-content__description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-content__description-text {
+    display: flex;
+    flex-direction: row;
+    max-width: 768px;
+    padding-inline: 80px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-content {
+    margin-top: 98px;
+  }
+
+  .form-content__description-text {
+    line-height: 30px;
   }
 }

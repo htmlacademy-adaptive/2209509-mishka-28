@@ -43,5 +43,64 @@
     font-family: "Open Sans";
     font-size: 18px;
     margin-bottom: 40px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .review {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-block: 50px 40px;
+  }
+
+  .review-block {
+    margin: 0;
+  }
+
+  .review__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+    width: 668px;
+    padding-inline: 30px;
+  }
+
+  .review-block__input {
+    width: 501px;
+  }
+
+  .review__button-wrapper {
+    position: absolute;
+    margin: 0;
+    top: 190px;
+    left: 30px;
+  }
+
+  .review__necessarily {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 63px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .review__wrapper {
+    width: 1050px;
+    padding-inline: 80px;
+  }
+
+  .review-block__input {
+    width: 700px;
+  }
+
+  .review__button-wrapper {
+    position: absolute;
+    margin: 0;
+    top: 190px;
+    left: 185px;
   }
 }
