@@ -32,6 +32,13 @@
             <li class="nav__item">
               <a href="form.html" class="nav__link">Вязание на заказ</a>
             </li>
+
+            <li class="nav__item nav__item--desktop">
+              <a href="form.html" class="nav__link">Новые поступления</a>
+            </li>
+            <li class="nav__item nav__item--desktop">
+              <a href="form.html" class="nav__link">Распродажа</a>
+            </li>
           </ul>
 
           <div class="nav__page-menu">
@@ -52,16 +59,16 @@
               <span class="nav__cart-label">Корзина: пока пуста</span>
             </a>
           </div>
+
+          <div class="subnav">
+            <div class="subnav__container">
+                <p class="subnav__delivery">Бесплатная доставка по России</p>
+            </div>
+          </div>
         </div>
         </div>
       </div>
     </nav>
-
-    <div class="subnav">
-      <div class="subnav__container">
-          <p class="subnav__delivery">Бесплатная доставка по России</p>
-      </div>
-    </div>
 
     <div class="category-nav">
       <div class="category-nav__container">
@@ -73,7 +80,7 @@
         </div>
         <div class="category-nav__list-wrapper">
           <ul class="category-nav__list">
-            <li class="category-nav__item">
+            <li class="category-nav__item category-nav__item--interior">
               <a href="#" class="category-nav__link">
                 Предметы<br>
                 интерьера
@@ -91,7 +98,7 @@
                 </svg>
               </div>
             </li>
-            <li class="category-nav__item">
+            <li class="category-nav__item category-nav__item--toys">
               <a href="#" class="category-nav__link">
                 Детские<br>
                 игрушки
@@ -119,7 +126,7 @@
           </h2>
 
           <span class="featured-products__subtitle">
-            ТОВАР <br>НЕДЕЛИ
+            ТОВАР <br class="featured-products__br">НЕДЕЛИ
           </span>
         </div>
 
@@ -131,7 +138,7 @@
 
           <div class="featured-products__options">
             <div class="featured-products__options-list">
-              <span class="featured-products__options-point">Цвет: <span class="featured-products__options-point-value">тиффани</span></span>
+              <span class="featured-products__options-point">Цвет: <span class="featured-products__options-point-value">тиффани/серый</span></span>
               <span class="featured-products__options-point">Диаметр: <span class="featured-products__options-point-value">25 см</span></span>
               <span class="featured-products__options-point">Высота: <span class="featured-products__options-point-value">15 см</span></span>
             </div>
@@ -140,8 +147,14 @@
 
           <div class="featured-products__image-wrapper">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/Knitted-baskets-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/Knitted-baskets-tablet.png">
+              <source media="(min-width: 1440px)" srcset="./img/Knitted-baskets-desktop.png">
+              <source media="(min-width: 1440px)" srcset="img/Knitted-baskets-desktop.avif 1x, img/Knitted-baskets-desktop.avif 2x">
+              <source media="(min-width: 1440px)" srcset="img/Knitted-baskets-desktop.webp 1x, img/Knitted-baskets-desktop.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="./img/Knitted-baskets-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/Knitted-baskets-tablet.avif 1x, img/Knitted-baskets-tablet.avif 2x">
+              <source media="(min-width: 768px)" srcset="img/Knitted-baskets-tablet.webp 1x, img/Knitted-baskets-tablet.webp 2x">
+
               <img class="featured-products__image" src="img//Knitted-baskets-mobile.png" alt="Вязаные корзинки">
             </picture>
           </div>
@@ -341,17 +354,17 @@
           <span class="size-select__legend">Выберите размер:</span>
           <ul class="size-select__list">
             <li class="size-select__item">
-              <label for="size-select__label" class="size-select__label">S
+              <label for="size-select-input-1" class="size-select__label">S
                 <input class="size-select__input visually-hidden" id="size-select-input-1" name="size" type="radio" value="s" checked>
               </label>
             </li>
             <li class="size-select__item">
-              <label for="size-select__label" class="size-select__label">M
+              <label for="size-select-input-2" class="size-select__label">M
                 <input class="size-select__input visually-hidden" id="size-select-input-2" name="size" type="radio" value="m">
               </label>
             </li>
             <li class="size-select__item">
-              <label for="size-select__label" class="size-select__label">L
+              <label for="size-select-input-3" class="size-select__label">L
                 <input class="size-select__input visually-hidden" id="size-select-input-3" name="size" type="radio" value="l">
               </label>
             </li>

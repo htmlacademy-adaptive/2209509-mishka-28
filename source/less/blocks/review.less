@@ -3,6 +3,7 @@
     position: relative;
     font-family: "Open Sans";
     font-size: 17px;
+    font-weight: 700;
     color: #63d1bb;
     text-transform: uppercase;
   }
@@ -42,8 +43,37 @@
     color: #444444;
     font-family: "Open Sans";
     font-size: 18px;
+    font-weight: 700;
     margin-bottom: 40px;
     cursor: pointer;
+  }
+
+  .review__title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
+    left: 60px;
+    top: 10px;
+  }
+
+  .review-block__input:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  .review-block__input:focus {
+    border: 2px solid #62d1ba;
+  }
+
+  .review__button:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  .review__button:active {
+    background-color: #444444;
+    color: #7c7c7c;
   }
 }
 
@@ -84,6 +114,11 @@
     width: 100%;
     justify-content: flex-end;
     margin-top: 63px;
+  }
+
+  .review__title::after {
+    content: "";
+    display: none;
   }
 }
 

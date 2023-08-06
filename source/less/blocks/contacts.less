@@ -7,6 +7,7 @@
     position: relative;
     font-family: "Open Sans";
     font-size: 17px;
+    font-weight: 700;
     color: #63d1bb;
     text-transform: uppercase;
   }
@@ -25,6 +26,28 @@
     position: absolute;
     top: 40px;
     right: 11px;
+  }
+
+  .contacts-block__label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
+    left: 60px;
+    top: 10px;
+  }
+
+  .contacts-block__icon:hover {
+    fill: #62d1ba;
+  }
+
+  .contacts-block__input:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  .contacts-block__input:active {
+    color: #000000;
   }
 }
 
@@ -62,6 +85,11 @@
 
   .contacts-block__input {
     background-color: #f2f2f2;
+  }
+
+  .contacts-block__label::after {
+    content: "";
+    display: none;
   }
 }
 
