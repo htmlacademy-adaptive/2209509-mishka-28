@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) {
   .form-block {
-    margin-block: 35px;
+    margin-block: 0;
   }
 
   .form-block__title {
@@ -8,12 +8,14 @@
     font-family: "Open Sans";
     font-size: 17px;
     color: #63d1bb;
+    margin-top: 10px;
   }
 
   .form-block__container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 25px;
   }
 
   .form-block__label {
@@ -60,12 +62,17 @@
     column-gap: 103px;
   }
 
+  .form-block__title {
+    margin-top: 15px;
+  }
+
   .form-block__wrapper {
     display: flex;
     flex-direction: row;
-    column-gap: 103px;
+    column-gap: 125px;
     width: 668px;
-    padding-inline: 30px;
+    padding-inline: 0;
+    padding-block: 50px;
   }
 
   .form-block__label {
@@ -73,7 +80,18 @@
     flex-direction: row;
     align-items: center;
     column-gap: 27px;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 19px;
+  }
+
+  .form-block__input {
+    width: 100%;
+  }
+
+  .form-block__container {
+    margin-top: 0;
+    gap: 25px;
+    width: 100%;
   }
 
   .form-block__title::after {
@@ -85,10 +103,16 @@
 @media screen and (min-width: 1440px) {
   .form-block__wrapper {
     width: 1050px;
-    padding-inline: 80px;
+    padding-left: 60px;
+    padding-right: 175px;
+    column-gap: 78px;
   }
 
   .form-block__container {
     width: 100%;
+  }
+
+  .form-block__input {
+    font-size: 19px;
   }
 }

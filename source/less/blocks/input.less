@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) {
   .input-block {
-    margin-block: 35px;
+    margin-block: 26px;
   }
 
   .inputs__title {
@@ -8,6 +8,7 @@
     font-family: "Open Sans";
     font-size: 17px;
     color: #63d1bb;
+    margin-top: 10px;
   }
 
   .inputs__title::after {
@@ -38,7 +39,7 @@
 
   .input-block__field {
     display: grid;
-    gap: 15px;
+    gap: 10px;
   }
 
   .input-block__label {
@@ -66,14 +67,16 @@
     justify-content: center;
     flex-direction: row;
     column-gap: 103px;
+    margin-top: 20px;
+    margin-bottom: 22px;
   }
 
   .inputs__wrapper {
     display: flex;
     flex-direction: row;
-    column-gap: 103px;
+    column-gap: 130px;
     width: 668px;
-    padding-inline: 30px;
+    padding: 0;
   }
 
   .inputs__title {
@@ -87,13 +90,24 @@
   }
 
   .input-block__label {
-    font-weight: 400;
+    font-size: 19px;
+    gap: 30px;
+  }
+
+  .input-block__check {
+    width: 52px;
+    height: 52px;
+  }
+
+  .input-block__field {
+    gap: 25px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .inputs__wrapper {
     width: 1050px;
-    padding-inline: 80px;
+    padding-inline: 60px;
+    column-gap: 80px;
   }
 }

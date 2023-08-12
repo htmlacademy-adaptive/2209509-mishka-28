@@ -1,9 +1,11 @@
 @media screen and (min-width: 320px) {
   .comments {
+    position: relative;
     max-width: 320px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .comments__wrapper {
@@ -63,6 +65,18 @@
     width: 130px;
     border: none;
     background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .comments::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-grey-mobile.svg");
+    background-position: bottom;
   }
 
   .comments__switch-button:hover {
@@ -139,13 +153,12 @@
   .comments::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 24px;
-    background-image: url("../img/zigzag-grey.png");
+    background-image: url("../img/zigzag-grey-tablet.svg");
     background-position: bottom;
-    background-size: 770px 24px;
   }
 }
 
@@ -170,5 +183,15 @@
   .comments__button {
     right: 220px;
   }
-}
 
+  .comments::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 190px;
+    width: 1050px;
+    height: 24px;
+    background-image: url("../img/zigzag-grey-desktop.svg");
+    background-position: bottom;
+  }
+}

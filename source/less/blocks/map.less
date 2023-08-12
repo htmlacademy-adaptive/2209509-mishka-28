@@ -1,4 +1,8 @@
 @media screen and (min-width: 320px) {
+  .map {
+    min-height: 870px;
+  }
+
   .map__wrapper {
     max-width: 320px;
     display: flex;
@@ -69,6 +73,8 @@
   }
 
   .map__window-button-wrapper {
+    position: absolute;
+    top: 720px;
     display: flex;
     justify-content: center;
     margin-block: 40px;
@@ -95,6 +101,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .map {
+    min-height: 900px;
+  }
+
   .map__wrapper {
     max-width: 768px;
     display: flex;
@@ -142,6 +152,8 @@
 
   .map__window-button-wrapper {
     margin: 0;
+    top: 690px;
+    left: 220px;
   }
 
   .map__window-button {
@@ -151,13 +163,20 @@
 
 @media screen and (min-width: 1440px) {
   .map {
-    max-width: 1440px;
-    display: flex;
     position: relative;
     margin-top: 70px;
+    min-height: 500px;
+  }
+
+  .map__content {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .map__window {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -167,13 +186,17 @@
 
   .map__wrapper {
     position: relative;
-    left: 250px;
+    margin: 0;
   }
 
   .map__window-button-wrapper {
-    position: absolute;
-    left: 550px;
-    top: 350px;
+    position: static;
+    padding-top: 55px;
+    display: block;
+  }
+
+  .map__window-button {
+    width: 230px;
   }
 
   .map-adress-frame {

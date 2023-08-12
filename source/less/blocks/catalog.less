@@ -61,11 +61,11 @@
     margin-bottom: 20px;
   }
 
-  .catalog__item:hover {
+  .catalog__info:hover {
     box-shadow: 0 5px 5px #ececec;
   }
 
-  .catalog__item:active {
+  .catalog__info:active {
     box-shadow: 2px 3px 5px #ececec;
   }
 
@@ -93,13 +93,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 55px;
   }
 
   .catalog__list {
     display: flex;
     flex-direction: column;
-    gap: 54px;
+    gap: 50px;
     list-style: none;
     padding: 0;
   }
@@ -124,19 +124,24 @@
 
   .catalog__title {
     font-size: 20px;
+    margin-top: 15px;
+    width: 230px;
   }
 
   .catalog__parameter {
     font-size: 15px;
   }
 
+  .catalog__description--big {
+    margin: 0;
+  }
+
   .catalog__price {
     position: absolute;
-    padding-top: 20px;
-    top: 254px;
+    padding-top: 158px;
     border-top: 1px solid #ececec;
     font-family: "Open Sans";
-    font-size: 15px;
+    font-size: 17px;
     color: #000000;
     display: flex;
     flex-direction: row;
@@ -145,11 +150,11 @@
     width: 268px;
   }
 
-  .catalog__item:hover {
+  .catalog__info:hover {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 
-  .catalog__item:active {
+  .catalog__info:active {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 }
@@ -167,7 +172,7 @@
 
   .catalog__item {
     width: 316px;
-    min-height: 659px;
+    border: none;
   }
 
   .catalog__info {
@@ -175,23 +180,27 @@
     flex-direction: column;
     flex-grow: 1;
     padding-inline: 26px;
+    width: 316px;
   }
 
   .catalog__item-link {
     flex-direction: column;
+    min-height: 659px;
+    border: 1px solid #ececec;
   }
 
-  .catalog__item:hover {
+  .catalog__info:hover {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 
-  .catalog__item:active {
+  .catalog__info:active {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 
   .catalog__price {
     position: static;
     width: 256px;
+    padding-top: 20px;
     margin: 0;
   }
 
@@ -201,7 +210,10 @@
   }
 
   .catalog__description {
-    padding-bottom: 36px;
+    padding-bottom: 20px;
+  }
+
+  .catalog__description--big {
+    margin: 0;
   }
 }
-

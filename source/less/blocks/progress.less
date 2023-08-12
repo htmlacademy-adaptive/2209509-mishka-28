@@ -31,7 +31,27 @@
   }
 
   .process__video {
+    position: relative;
     margin-top: 10px;
+  }
+
+  .process__video-play {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 80px;
+    width: 102px;
+    height: 77px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .process__video-play:hover {
+    transform: scale(1.2);
+  }
+
+  .process__video-play:active {
+    transform: scale(0.8);
+    opacity: 30%;
   }
 
   .process__text {
@@ -78,7 +98,7 @@
     justify-content: center;
     margin: 0 auto;
     padding-bottom: 60px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   .process__wrapper {
@@ -95,22 +115,40 @@
     top: 450px;
     width: 668px;
     justify-content: left;
-    margin-left: 30px;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: 23px;
+  }
+
+  .process__video-play {
+    margin-top: 190px;
+    margin-left: 280px;
+  }
+
+  .process__video {
+    margin: 0;
   }
 
   .process__title {
     font-size: 20px;
   }
 
+  .process__description {
+    margin-bottom: 10px;
+  }
+
   .process__text {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 0;
+    margin-left: 10px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .process__button {
-    width: 100%;
+    width: 584px;
+    margin-top: 43px;
+    margin-left: 10px;
   }
 
   .process__br {
@@ -125,7 +163,7 @@
 @media screen and (min-width: 1440px) {
   .process {
     max-width: 1440px;
-    margin-top: 47px;
+    padding-bottom: 105px;
   }
 
   .process__wrapper {
@@ -140,7 +178,7 @@
   .process__video-wrapper {
     position: absolute;
     top: 47px;
-    right: 120px;
+    right: 110px;
     width: 178px;
     justify-content: center;
     flex-direction: column;
@@ -149,18 +187,22 @@
   }
 
   .process__text {
-    margin-top: 140px;
-    margin-left: 40px;
+    margin-top: 150px;
+    margin-left: 50px;
   }
 
   .process__button {
-    margin-left: 40px;
-    margin-top: 60px;
+    margin-left: 50px;
+    margin-top: 50px;
     width: 230px;
   }
 
   .process__video-icon {
     position: relative;
     right: 75px;
+  }
+
+  .process__video-play {
+    margin-left: 290px;
   }
 }
