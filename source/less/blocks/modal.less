@@ -1,0 +1,133 @@
+@media screen and (min-width: 320px) {
+  .modal {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+
+  .modal__wrapper {
+    width: 320px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+    text-align: center;
+    min-height: 336px;
+    z-index: 20;
+    padding-block: 28px;
+  }
+
+  .modal__title {
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-inline: 80px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .size-select__legend {
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+  }
+
+  .size-select__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 27px;
+    padding-left: 30px;
+  }
+
+  .size-select__label {
+    width: 82px;
+    min-height: 52px;
+    border: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    color: #444444;
+    cursor: pointer;
+  }
+
+  .size-select__label .size-select__input:checked {
+    border: 1px solid #63d1bb;
+  }
+
+  .size-select-wrapper__button {
+    width: 260px;
+    min-height: 52px;
+    border: none;
+    background-color: #63d1bb;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .size-select-wrapper__button:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  .size-select-wrapper__button:active {
+    background-color: #444444;
+    color: #7c7c7c;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__wrapper {
+    width: 566px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+    text-align: center;
+    min-height: 336px;
+    padding-block: 50px;
+    z-index: 20;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .size-select__legend {
+    font-size: 17px;
+  }
+
+  .size-select__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 19px;
+    padding-left: 110px;
+  }
+
+  .size-select__label {
+    width: 112px;
+    min-height: 52px;
+  }
+
+  .size-select-wrapper__button {
+    width: 350px;
+  }
+}

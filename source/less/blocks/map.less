@@ -1,0 +1,232 @@
+@media screen and (min-width: 320px) {
+  .map {
+    min-height: 870px;
+  }
+
+  .map__wrapper {
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .map__window {
+    position: relative;
+    padding-inline: 30px;
+    margin-bottom: 62px;
+  }
+
+  .map__window-title {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+    padding-top: 30px;
+  }
+
+  .map__window-email {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-block: 30px;
+    font-family: "Open Sans";
+    color: #444444;
+    font-size: 14px;
+  }
+
+  .map__window-email-link {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+  }
+
+  .map__window-direction {
+    display: flex;
+    gap: 30px;
+    font-family: "Open Sans";
+    color: #444444;
+    font-size: 14px;
+  }
+
+  .map__window-direction-link {
+    display: block;
+    width: 183px;
+  }
+
+  .map-adress-frame {
+    height: 454px;
+    width: 100%;
+    border: none;
+  }
+
+  .map__window-button {
+    width: 260px;
+    min-height: 52px;
+    border: 2px solid #444444;
+    background-color: #ffffff;
+    color: #444444;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .map__window-button-wrapper {
+    position: absolute;
+    top: 720px;
+    display: flex;
+    justify-content: center;
+    margin-block: 40px;
+  }
+
+  .map__window-email-link:hover {
+    color: #46c1ae;
+  }
+
+  .map__window-email-link:active {
+    color: #46c1ae;
+    border: none;
+  }
+
+  .map__window-button:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  .map__window-button:active {
+    background-color: #444444;
+    color: #7c7c7c;
+  }
+
+  .map__window-button:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    min-height: 900px;
+  }
+
+  .map__wrapper {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .map__window {
+    width: 100%;
+    position: relative;
+    padding-inline: 60px;
+    margin-top: 46px;
+  }
+
+  .map__window::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 53px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  .map__window-title {
+    font-size: 43px;
+  }
+
+  .map__window-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .map__window-email {
+    font-size: 17px;
+  }
+
+  .map__window-direction {
+    position: relative;
+    font-size: 17px;
+    top: 30px;
+  }
+
+  .map__window-button-wrapper {
+    margin: 0;
+    top: 690px;
+    left: 220px;
+  }
+
+  .map__window-button {
+    margin-block: 55px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map {
+    position: relative;
+    margin-top: 70px;
+    min-height: 500px;
+  }
+
+  .map__content {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .map__window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 457px;
+    padding-right: 0;
+  }
+
+  .map__wrapper {
+    position: relative;
+    margin: 0;
+  }
+
+  .map__window-button-wrapper {
+    position: static;
+    padding-top: 55px;
+    display: block;
+  }
+
+  .map__window-button {
+    width: 230px;
+  }
+
+  .map-adress-frame {
+    width: 527px;
+    height: 457px;
+  }
+
+  .map__window-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .map__window::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -20px;
+  }
+
+  .map__window-title {
+    font-size: 53px;
+  }
+
+  .map__window-email {
+    margin-bottom: 0;
+  }
+}

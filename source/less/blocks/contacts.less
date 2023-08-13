@@ -1,0 +1,131 @@
+@media screen and (min-width: 320px) {
+  .contacts-block {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+
+  .contacts-block__label {
+    position: relative;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+
+  .contacts-block__input {
+    width: 100%;
+    height: 52px;
+    font-family: "Open Sans";
+    font-size: 17px;
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  .contacts-block__icon {
+    position: absolute;
+    top: 40px;
+    right: 11px;
+  }
+
+  .contacts-block__label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
+    left: 60px;
+    top: 10px;
+  }
+
+  .contacts-block__icon:hover {
+    fill: #62d1ba;
+  }
+
+  .contacts-block__input:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  .contacts-block__input:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
+  }
+
+
+  .contacts-block__input:active {
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#ffffff 0, #f2f2f2 0);
+  }
+
+  .contacts-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-block: 47px;
+  }
+
+  .contacts__wrapper {
+    column-gap: 103px;
+    width: 668px;
+    padding-inline: 0;
+  }
+
+  .contacts-block__field {
+    display: flex;
+  }
+
+  .contacts-block__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 105px;
+  }
+
+  .contacts-block__icon {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+  }
+
+  .contacts-block__input {
+    background-color: #f2f2f2;
+    width: 501px;
+  }
+
+  .contacts-block__label::after {
+    content: "";
+    display: none;
+  }
+
+  .contacts-block__input--tel {
+    position: relative;
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__wrapper {
+    width: 1050px;
+    padding-inline: 60px;
+  }
+
+  .contacts-block__label {
+    column-gap: 53px;
+  }
+
+  .contacts-block__input {
+    background-color: #f2f2f2;
+    width: 700px;
+    padding-left: 20px;
+  }
+}
